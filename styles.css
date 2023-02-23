@@ -1,5 +1,9 @@
 body{
-    margin: 0;
-    background: pink;
-    text-align: center;
+    margin: 2px;
+    background: whitesmoke;
+    text-align: left;
+}
+
+text{
+    font-family: Roboto;
 }
