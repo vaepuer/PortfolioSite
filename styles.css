@@ -1,6 +1,48 @@
+:root{
+    --M-Green:#a3bfa2;
+    --M-Blue: #546a76;
+}
+
 body{
+    cursor:grab;
     margin: 2px;
-    background: whitesmoke;
+    background-image: 
+    linear-gradient(
+        var(--M-Blue)80%,
+        var(--M-Green)50%
+    );
+    
     text-align:left;
     font-family: 'Roboto', sans-serif, color black;
 }
+/*#region Button*/
+button{
+    border-style:solid;
+    border-color: grey;
+    color: black;
+    padding: 0px 2px;
+    cursor:grab;
+    transform-origin: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 10px 10px;
+}
+button:hover{
+    border-color: hidden;
+    padding: 4px 4px;
+    transform-origin: center;
+    cursor:grab;
+    color: #00000077 ;
+}
+button:active{
+    cursor:grabbing;
+    border-style:hidden;
+    border-color: hidden;
+    transform-origin: center;
+    color: #485b66;
+    background-color: #485b66;
+
+}
+/*#endregion Button*/
