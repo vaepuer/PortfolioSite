@@ -1,6 +1,8 @@
 :root{
     --M-Green:#a3bfa2;
     --M-Blue: #546a76;
+    
+    
 }
 
 body{
@@ -15,22 +17,58 @@ body{
     text-align:left;
     font-family: 'Roboto', sans-serif, color black;
 }
-/*#region Button*/
-button{
+
+.wrapper {display: flex;}
+
+.btn1 {--txt: "Return_Home";}
+.btn2 {--txt: "Click to Expand";}
+
+.txtBx1{--txt: "textBox";}
+
+#container{
+    display: flex;
+}
+
+/*#region Button1*/
+.btn1{
     all:unset;
     cursor:pointer;
     transform: scale(0.25);
     margin: -90px -90px;
     transition: transform.3s;
 }
-button:hover{
+.btn1:hover{
     transform: scale(0.3);
-
 }
-button:active{
+.btn1:active{
     transform:scale(0.15);
     transition: transform.15s;
 }
-/*#endregion Button*/
+
+/*#endregion Button1*/
+/*#region Button2*/
+.btn2{
+    all:unset;
+    cursor:pointer;
+    align-items: center;
+    justify-items: center;
+    transform: scaleX(0.6) scaleY(0.3);
+    transition: transform.3s;
+}
+.btn2:hover{
+    transform: scaleX(0.7) scaleY(0.4);
+}
+.btn2:active{
+    transform:scaleX(0.4) scaleY(0.2);
+    transition: transform.15s;
+}
+
+/*#endregion Button2*/
+/*#region textBox*/
+.txtBx1{
+    all:unset;
+    visibility:hidden;
+}
+/*#endregion textBox*/
 
 
