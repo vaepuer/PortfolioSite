@@ -17,32 +17,14 @@ body{
 }
 /*#region Button*/
 button{
-    border-style:solid;
-    border-color: grey;
-    color: black;
-    padding: 0px 2px;
-    cursor:grab;
-    transform-origin: center;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 32px;
-    margin: 10px 10px;
+    color: red;
+    size: 15px;
 }
 button:hover{
-    border-color: hidden;
-    padding: 4px 4px;
-    transform-origin: center;
-    cursor:grab;
-    color: #00000077 ;
+    size: 20px;
 }
 button:active{
-    cursor:grabbing;
-    border-style:hidden;
-    border-color: hidden;
-    transform-origin: center;
-    color: #485b66;
-    background-color: #485b66;
+    size: 10px;
 
 }
 /*#endregion Button*/
