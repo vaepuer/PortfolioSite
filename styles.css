@@ -17,11 +17,11 @@ body{
 
 .wrapper {display: flex;}
 
-.btn1 {--txt: "Return_Home";}
-.btn2 {--txt: "Click to Expand";}
-.btn3 {--txt: "button_CFM"}
+.btn1 {--txt: "btn1";}
+.btn2 {--txt: "btn2";}
+.btn3 {--txt: "btn3"}
 
-
+.CFM {--txt: "CFM"}
 #container{
     display: flex;
     position: relative;
@@ -44,22 +44,18 @@ body{
 
 
 .btn2{
-    all: unset;
-    transform: scaleX(0.5) scaleY(0.3);
-    transition: transform.3s;
+   all:unset;
+   transform: scale(0.25);
+   transition: transform.15s;
 }
 .btn2:hover{
-    transform: scale(0.8);
+    transform: scale(0.3);
 }
 .btn2:active{
-    transform: scale(1.2);
-    transition: transform.15s;
+    transform: scale(0.2);
 }
 
 
-.CFM{
-    
-}
 
 
 
