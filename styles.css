@@ -45,7 +45,7 @@ body{
 
 .btn2{
     all: unset;
-    transform: scaleX(1) scaleY(0.5);
+    transform: scaleX(0.5) scaleY(0.3);
     transition: transform.3s;
 }
 .btn2:hover{
