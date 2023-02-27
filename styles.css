@@ -1,10 +1,7 @@
 :root{
     --M-Green:#a3bfa2;
     --M-Blue: #546a76;
-    
-    
 }
-
 body{
     margin: 2px;
     background-image: 
@@ -22,14 +19,14 @@ body{
 
 .btn1 {--txt: "Return_Home";}
 .btn2 {--txt: "Click to Expand";}
+.btn3 {--txt: "button_CFM"}
 
-.txtBx1{--txt: "textBox";}
 
 #container{
     display: flex;
+    position: relative;
 }
 
-/*#region Button1*/
 .btn1{
     all:unset;
     cursor:pointer;
@@ -45,30 +42,24 @@ body{
     transition: transform.15s;
 }
 
-/*#endregion Button1*/
-/*#region Button2*/
+
 .btn2{
-    all:unset;
-    cursor:pointer;
-    align-items: center;
-    justify-items: center;
-    transform: scaleX(0.6) scaleY(0.3);
+    all: unset;
+    transform: scaleX(1) scaleY(0.5);
     transition: transform.3s;
 }
 .btn2:hover{
-    transform: scaleX(0.7) scaleY(0.4);
+    transform: scale(0.8);
 }
 .btn2:active{
-    transform:scaleX(0.4) scaleY(0.2);
+    transform: scale(1.2);
     transition: transform.15s;
 }
 
-/*#endregion Button2*/
-/*#region textBox*/
-.txtBx1{
-    all:unset;
-    visibility:hidden;
+
+.CFM{
+    
 }
-/*#endregion textBox*/
+
 
 
