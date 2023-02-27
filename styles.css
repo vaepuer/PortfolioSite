@@ -4,13 +4,13 @@
 }
 
 body{
-    cursor:grab;
     margin: 2px;
     background-image: 
     linear-gradient(
         var(--M-Blue)80%,
         var(--M-Green)50%
     );
+    background-attachment: fixed;
     
     text-align:left;
     font-family: 'Roboto', sans-serif, color black;
@@ -25,12 +25,12 @@ button{
 }
 button:hover{
     transform: scale(0.3);
-    overflow: hidden;
-    color: white;
+
 }
 button:active{
     transform:scale(0.15);
     transition: transform.15s;
 }
-
 /*#endregion Button*/
+
+
