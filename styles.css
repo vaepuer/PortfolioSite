@@ -2,6 +2,12 @@
     --M-Green:#a3bfa2;
     --M-Blue: #546a76;
 }
+*{
+    margin: 0;
+    padding: 2;
+    border: 0;
+}
+
 body{
     margin: 2px;
     background-image: 
@@ -10,28 +16,32 @@ body{
         var(--M-Green)50%
     );
     background-attachment: fixed;
-    
-    text-align:left;
+
     font-family: 'Roboto', sans-serif, color black;
 }
 
-.wrapper {display: flex;}
+
 
 .btn1 {--txt: "btn1";}
 .btn2 {--txt: "btn2";}
-.btn3 {--txt: "btn3"}
+.btn3 {--txt: "btn3";}
 
-.CFM {--txt: "CFM"}
+.textBox1{--txt: "txtBx1";}
+.textBox2{--txt: "txtBx2";}
+
 #container{
-    display: flex;
-    position: relative;
+    overflow-y: scroll;
+    
 }
-
+/*#region homeButton*/
 .btn1{
     all:unset;
+    position:fixed;
+    top:10;
     cursor:pointer;
+    justify-content: left;
     transform: scale(0.25);
-    margin: -90px -90px;
+    margin: -95px -100px -10px;
     transition: transform.3s;
 }
 .btn1:hover{
@@ -41,21 +51,221 @@ body{
     transform:scale(0.15);
     transition: transform.15s;
 }
-
+/*#endregion homeButton*/
 
 .btn2{
-   all:unset;
-   transform: scale(0.25);
-   transition: transform.15s;
+    all:unset;
+    
+    transform-origin: center;
+    align-items: left;
+    margin: 0px -60%;
+    transform: scale(0.4);
+    transition: transform.15s;
 }
 .btn2:hover{
-    transform: scale(0.3);
+    transform: scale(0.45);
 }
 .btn2:active{
-    transform: scale(0.2);
+    transform: scale(0.35);
 }
 
 
+.textBox1{
+    transform-origin: center;
+    align-items: left;
+    margin: -10% 15%;
+
+}
+#header1{
+    background: red;
+    display: block;
+}
 
 
+/*#region div1*/
+#div1{
+    background:linear-gradient(#a3bfa2, #99b498);
+    border-radius: 10px;
 
+    position: relative;
+    width:  325px;
+    height: 50px;
+    top:    100px;
+    left:   35%;
+    
+    padding:10px 10px 400px 10px; 
+  }
+#div1button1{
+    
+    all: unset;
+    position: relative;
+    filter: drop-shadow(0px -20px 0px rgba(0, 0, 0, 0.295));
+    scale: 0.2;
+    bottom: -180px;
+    right: -190px;
+    transition: scale.2s;
+    
+}
+#div1button1:hover{
+    scale: 0.19;
+    filter: drop-shadow(0px -5px 0px rgba(0, 0, 0, 0.532));
+
+}
+#div1button1:active{
+    scale:0.21;
+    filter: drop-shadow(0px -20px 0px rgba(0, 0, 0, 0));
+
+}
+
+#div1box1{
+    position: relative;
+    overflow: inherit;
+
+    background: white;
+    border-radius: 10px;
+    width:inherit;
+    height: 200px;
+    bottom: 390px;
+    left: -2px;
+
+}
+#div1box1image1{
+    position: relative;
+    overflow: inherit;
+    padding: auto;
+    aspect-ratio: 16/9;
+    scale: 50%;
+    bottom: 48%;
+    left: -10%;
+}
+#div1image2{
+    position: relative;
+    overflow: inherit;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    width:100px;
+    height:25px;
+    bottom: 380px;
+    left: -2px;
+    transition: scale.1s;
+    
+}
+#div1image2:hover{
+    scale: 1.1;
+}
+#div1image3{
+    position: relative;
+    overflow: inherit;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    width:100px;
+    height:25px;
+    bottom: 409px;
+    left: 110px;
+    transition: scale.1s;
+}
+#div1image3:hover{
+    scale: 1.1;
+}
+#div1image4{
+    position: relative;
+    overflow: inherit;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    width:100px;
+    height:25px;
+    bottom: 438px;
+    left: 220px;
+    transition: scale.1s;
+}
+#div1image4:hover{
+    scale: 1.1;
+}
+#div1textbox1{
+    position: relative;
+    overflow: inherit;
+    word-wrap: break-word;
+    background: white;
+    border-radius: 10px;
+    width:inherit;
+    height:185px;
+    bottom: 430px;
+    left: -2px;
+}
+
+/*#endregion div1*/
+
+
+#div2{
+    background:linear-gradient(#99b498, #8ea98e) ;
+    
+    -webkit-text-fill-color: white;
+    position: relative;
+    display: none;
+
+    border-radius: 10px;
+
+    width:  325px;
+    height: 50px;
+    top:    110px;
+    left:   35%;
+
+    padding:10px 10px 400px 10px;
+  }
+#div2button1{
+    all: unset;
+    position: relative;
+    filter: drop-shadow(0px -20px 0px rgba(0, 0, 0, 0.295));
+    scale: 0.2;
+    bottom: -180px;
+    right: -190px;
+    transition: scale.2s;
+    
+    
+    
+}
+#div2button1:hover{
+    scale: 0.19;
+}
+#div2button1:active{
+    scale: 0.21;
+}
+
+#div3{
+    background: linear-gradient(#8ea98e, #7f997f);
+    display: none;
+    -webkit-text-fill-color: white;
+    border-radius: 10px;
+    
+    position:relative;
+    width:  325px;
+    height: 50px;
+    top:    120px;
+    left:   35%;
+
+    padding:10px 10px 400px 10px; 
+  }
+
+#spotifyStyle{
+    all:unset;
+    position:fixed;
+    left:10;
+    bottom: -60;
+}
+
+#titleHeader{
+    position: absolute;
+    top: -30;
+    left: 165;
+    scale: 50%;
+}
+
+#instaWidget{
+    position: fixed;
+    top:    0;
+    left:   -55;
+    scale:  60%;
+}
