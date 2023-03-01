@@ -6,6 +6,7 @@
     margin: 0;
     padding: 2;
     border: 0;
+    
 }
 
 body{
@@ -34,48 +35,28 @@ body{
     
 }
 /*#region homeButton*/
-.btn1{
-    all:unset;
-    position:fixed;
-    top:10;
-    cursor:pointer;
-    justify-content: left;
-    transform: scale(0.25);
-    margin: -95px -100px -10px;
-    transition: transform.3s;
+#btn1{
+    all: unset;
+    position: absolute;
+    padding: auto;
+    top: -90px;
+    left: -100px;
+    scale: 25%;
+    transition: scale.1s;
+    
 }
-.btn1:hover{
-    transform: scale(0.3);
+#btn1:hover{
+    scale: 28%;
 }
-.btn1:active{
-    transform:scale(0.15);
-    transition: transform.15s;
+#btn1:active{
+    scale: 19%;
 }
+
 /*#endregion homeButton*/
 
-.btn2{
-    all:unset;
-    
-    transform-origin: center;
-    align-items: left;
-    margin: 0px -60%;
-    transform: scale(0.4);
-    transition: transform.15s;
-}
-.btn2:hover{
-    transform: scale(0.45);
-}
-.btn2:active{
-    transform: scale(0.35);
-}
 
 
-.textBox1{
-    transform-origin: center;
-    align-items: left;
-    margin: -10% 15%;
 
-}
 #header1{
     background: red;
     display: block;
@@ -257,7 +238,7 @@ body{
 }
 
 #titleHeader{
-    position: absolute;
+    position: fixed;
     top: -30;
     left: 165;
     scale: 50%;
@@ -268,4 +249,14 @@ body{
     top:    0;
     left:   -55;
     scale:  60%;
+}
+#instaWidgetDiv{
+    background: red;
+    z-index: 100%;
+    border-radius: 10px;
+    width:inherit;
+    height: 200px;
+    top: 390px;
+    left: -2px;
+    
 }
