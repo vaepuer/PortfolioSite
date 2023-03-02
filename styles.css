@@ -21,15 +21,6 @@ body{
     font-family: 'Roboto', sans-serif, color black;
 }
 
-
-
-.btn1 {--txt: "btn1";}
-.btn2 {--txt: "btn2";}
-.btn3 {--txt: "btn3";}
-
-.textBox1{--txt: "txtBx1";}
-.textBox2{--txt: "txtBx2";}
-
 #container{
     overflow-y: scroll;
     
@@ -37,7 +28,7 @@ body{
 /*#region homeButton*/
 #btn1{
     all: unset;
-    position: absolute;
+    position: fixed; 
     padding: auto;
     top: -90px;
     left: -100px;
@@ -68,7 +59,7 @@ body{
     background:linear-gradient(#a3bfa2, #99b498);
     border-radius: 10px;
 
-    position: relative;
+    position:relative;
     width:  325px;
     height: 50px;
     top:    100px;
@@ -238,9 +229,9 @@ body{
 }
 
 #titleHeader{
-    position: fixed;
-    top: -30;
-    left: 165;
+    position: absolute;
+    top: -30px;
+    left: 160px;
     scale: 50%;
 }
 
